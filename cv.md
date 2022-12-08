@@ -41,5 +41,5 @@ function multiply(a, b){
 * *Belarussian* - basic
 * *Russian* - native
 * *English* - C2 Proficient 
-(according to online test at ![logo](/img/EFSET.png) - [EFSET](www.efset.org):
+(according to online test at ![logo](/img/EFSET.png) - [EFSET](https://www.efset.org/) ([certificate](https://www.efset.org/cert/unBbM1)): 
 ![EFSET certificate](/img/cert.png)
