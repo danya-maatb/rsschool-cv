@@ -7,16 +7,31 @@
   <title>CV Daniil Tsimko</title>
   <meta name="description" content="CV Daniil Tsimko">
 
+  <meta name="viewport" content="width=700px, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <h1> CV. Daniil Tsimko </h1>
+    <nav>
+      <a href="#about-me" class="nav-element">About me</a>
+      <a href="#skills" class="nav-element">Skills</a>
+      <a href="#code" class="nav-element">Code Sample</a>
+      <a href="#education" class="nav-element">Education</a>
+      <a href="#languages" class="nav-element">Languages</a>
+      <a href="#projects" class="nav-element">Projects</a>
+      <a href="#contacts" class="nav-element">My Contact Info</a>
+    </nav>
+    <div class="card" style="background:none; border: none; height: 200px; padding: 10px;"> 
+      <img src="img/header-photo.jpg" alt="CV photo" width="200px" class="header-image">
+      <h1> Daniil Tsimko </h1>
+    </div>
+
   </header>
 
   <main>
-    <section class='card'>
+    <section id="about-me" class='card'>
       <h2> About me</h2>
       <p> I am 22 years old, I work as a lab engineer in
          Belarusian National Technical University. My 
@@ -26,7 +41,7 @@
          interested in.
       </section>
 
-      <section class='card'>
+      <section id='skills' class='card'>
         <h2>Skills</h2>
       <ul>
         <li>CSS/HTML basics</li>
@@ -35,10 +50,10 @@
       </ul>
       </section>
       
-      <section class='card'>
+      <section id='code' class='card'>
         <h2>Code Sample</h2>
           <code>
-            <pre style="color: rgb(104, 103, 103);">
+            <pre style="color: rgb(243, 238, 238);">
   function multiply(a, b){
     a * b
   }
@@ -46,7 +61,7 @@
           </code>
       </section>
 
-      <section class='card'>
+      <section id="education" class='card'>
         <h2>Education</h2>
           <ul>
             <li>Belarusian National Technical University
@@ -59,7 +74,7 @@
           </ul>
       </section>
 
-      <section class='card'>
+      <section id="languages" class='card'>
         <h2>Languages</h2>
           <ul>
             <li><i>Belarussian</i> - basic;</li>
@@ -69,8 +84,13 @@
           </ul>
       </section>
 
+      <section id="projects" class='card'>
+        <h2>Projects</h2>
+        <p><a href="https://danya-maatb.github.io/rsschool-cv/cv" style="color: var(--main-text-color);"> CV in Markdown </a></p>
+      </section>
+
       <section>
-        <section class='card'>
+        <section id="contacts" class='card'>
           <h2>My Contact Info</h2>
             <ul>
               <li><b>Adress:</b> Minsk, Belarus</li>
@@ -81,5 +101,13 @@
               <li><b>Discord:</b> Danya#5449</li>
       </section>
   </main>
+
+  <footer style="height: 120px;">
+    <div style="margin: 10px auto; max-width: 640px;">
+      <p style="color: var(--main-text-color);">GitHub page: <a href="https://github.com/danya-maatb" style="color: var(--main-text-color);">https://github.com/danya-maatb</a></p>
+      <a href="https://rs.school/js/"><img src="img\rs_school_js.svg" alt="RSSchool" height="30"></a>
+      <p style="color: var(--main-text-color);">2022</p>
+    </div>
+  </footer>
 </body>
 </html>
