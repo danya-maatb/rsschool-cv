@@ -2,27 +2,36 @@
     --bgSection: #EDF2EC;
     --linksNav: #010201;
     --mainOrange: #E06733;
+    --mainGreen: #499A18;
+    --lightGray: #717171;
+    --darkGray: #636060;
+}
+
+body {
+    margin: 0;
 }
 
 header{
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: var(--bgSection);
 
     width: 1440px;
     height: 134px;
-    left: 0px;
-    top: 0px;
-
-    border: #010201 solid 1px;
+    margin: 0px;
 }
 
-.navbar {
+#navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-grow: none;
     flex-shrink: none;
     
     height: 50px;
+    width: 1120px;
     margin: 42px 109px 42px 111px;
    
     background-color: var(--bgSection);
@@ -67,7 +76,6 @@ nav {
 
     position: relative;
     
-    left: 4px;
     top: 0.05;
 }
 
@@ -77,7 +85,7 @@ nav {
     margin: 0px;
 
     position: relative;
-    left: -9px;
+    left: -12px;
 }
 
 .logoText {
@@ -110,5 +118,131 @@ nav {
     letter-spacing: 0em;
     text-align: left;
 
+
+}
+
+#welcome {
+    display: flex;
+    justify-content: space-between;
+
+    height: 532px;
+    width: 1440px;
+    
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bgSection);
+}
+
+#leaf1 {
+    position: absolute;
+    width: 81.23px;
+    height: 60.89px;
+    left: 366.93px;
+    top: 306.99px;
+
+    filter: blur(4.5px);
+    transform: matrix(-0.81, -0.56, 0.61, -0.81, 0, 0);
+}
+
+#leaf2 {
+    position: absolute;
+    width: 245.31px;
+    height: 177.84px;
+    left: 128.22px;
+    top: 196px;
+
+    filter: blur(4.5px);
+    transform: matrix(0.99, -0.12, 0.13, 0.99, 0, 0);
+}
+
+#leaf3 {
+    position: absolute;
+    width: 163.49px;
+    height: 141.86px;
+    left: 211.17px;
+    top: 394.6px;
+
+    filter: blur(3.5px);
+    transform: matrix(0.51, -0.84, 0.89, 0.49, 0, 0);
+}
+
+#leaf4 {
+    position: absolute;
+    width: 80.33px;
+    height: 61.57px;
+    left: 109px;
+    top: 396.66px;
+
+    filter: blur(4.5px);
+    transform: matrix(-0.63, 0.75, -0.81, -0.62, 0, 0);
+}
+
+#leaf5 {
+    position: absolute;
+    width: 120.93px;
+    height: 77.01px;
+    left: 419.12px;
+    top: 449px;
+
+    filter: blur(2px);
+    transform: matrix(-0.96, -0.26, 0.29, -0.96, 0, 0);
+}
+
+.leaves {
+    margin: 0;
+}
+
+.welcomeText {
+    margin-right: 109px;
+    margin-top: 98px;
+    height: 340px;
+    width: 549px;
+    padding: 0px;
+}
+
+.welcomeText h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+
+    margin: 0px;
+
+    color: var(--lightGray);
+}
+
+.welcomeText p {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    width: 525.44px;
+    height: 105px;
+
+    color: var(--darkGray);
+
+    margin: 42px 0px 48px;
+
+}
+
+.welcomeText input {
+    box-sizing: border-box;
+    width: 158px;
+    height: 44px;
+    margin: 0px;
+
+    background: none;
+    border: 2px solid var(--mainOrange);
+    border-radius: 10px;       
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 
 }
