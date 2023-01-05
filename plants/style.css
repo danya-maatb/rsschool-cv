@@ -7,6 +7,12 @@
     --darkGray: #636060;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--bgSection);
+}
 header {
     display: flex;
     justify-content: flex-start;
@@ -22,7 +28,8 @@ main {
     width: 1440px;
     margin: auto;
 }
-#navbar {
+
+#navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,14 +39,27 @@ main {
     margin-left: 111px;
    
     background-color: var(--bgSection);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 79.17px;
+    height: 21.04px;
+    
+}
+
+.logo p {
+    position: relative;
+    top: 5px;
 
     font-family: 'Inika';
-    font-size: 16px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left; 
+    font-size: 16px;
+    line-height: 21px;
 
+    color: #000000;
 }
 
 nav {
@@ -53,42 +73,6 @@ nav ul {
     justify-content: space-between; 
     padding: 0;
     list-style: none;
-}
-.logo {
-    flex-grow: none;
-    flex-shrink: none;
-}
-
-.logo1 {
-    width: 9.92px;
-    height: 17.28px;
-    margin: 0px;
-
-    position: relative;
-    
-    top: 0.05;
-}
-
-.logo2 {
-    width: 19px;
-    height: 20px;
-    margin: 0px;
-
-    position: relative;
-    left: -12px;
-}
-
-.logoText {
-    display: inline-block;
-
-    font-family: 'Inika';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-
-    margin-left: -9px;
 }
 
 .linksNav {
@@ -170,7 +154,7 @@ nav ul {
 
 }
 
-.welcomeText input {
+.welcomeText button {
     box-sizing: border-box;
     width: 158px;
     height: 44px;
@@ -188,10 +172,11 @@ nav ul {
     text-align: center;
 
     color: #000000
+
 }
 
 
-.welcomeText input:hover {
+.welcomeText button:hover {
     box-sizing: border-box;
     width: 158px;
     height: 44px;
@@ -306,7 +291,7 @@ nav ul {
     height: 50px;
 }
 
-.services_btns input {
+.services_btns button {
     width: 161px;
     height: 50px;
 
@@ -324,7 +309,7 @@ nav ul {
     color: var(--mainOrange);
 }
 
-.services_btns input:hover {
+.services_btns button:hover {
     width: 161px;
     height: 50px;
 
@@ -521,7 +506,7 @@ nav ul {
     color: #000000;
 }
 
-.textCallUs input {
+.textCallUs button {
     width: 162px;
     height: 50px;
 
@@ -539,7 +524,7 @@ nav ul {
 
 }
 
-.textCallUs input:hover {
+.textCallUs button:hover {
     width: 162px;
     height: 50px;
 
@@ -562,10 +547,9 @@ nav ul {
     align-items: flex-end;
 
 }
-.textCallUsWrapper img {
-    width: 152px;
-    height: 174.99px;
 
+.textCallUsWrapper img {
+    padding: 0;
     margin-top: 39px;
 }
 
@@ -583,6 +567,7 @@ nav ul {
 
 .contactWoman {
     align-self: flex-end;
+    margin-right: 113px;
 }
 
 #contacts h2 {
@@ -600,6 +585,7 @@ nav ul {
 }
 
 .contactsContainer {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -646,6 +632,7 @@ footer {
     justify-content: center;
     align-items: center;
 
+    margin: auto;
     box-sizing: border-box;
     width: 1440px;
     height: 130px;
@@ -666,6 +653,7 @@ footer {
 footer .content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     width: 1222px;
     height: 50px;   
@@ -694,7 +682,6 @@ footer a {
     color: #000000;
 
     margin: 0px;
-
 }
 
 footer a:hover {
@@ -712,20 +699,22 @@ footer a:hover {
 
 }
 
-footer .socialList {
+.socialList {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 188px;
     height: 50px;
 
+    margin: 0px;
+    padding: 0px;
+
+    list-style-type: none;
 }
 
-footer .socialList:hover {
+.socialList li {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 188px;
-    height: 50px;
-
+    align-self: center;
+    width: 32px;
+    height: 32px;
 }
