@@ -28,31 +28,32 @@ main {
     justify-content: space-between;
     
     height: 50px;
-    width: 1120px;
+    width: 1220px;
     margin-left: 111px;
    
     background-color: var(--bgSection);
 
-    font-family: Inter;
+    font-family: 'Inika';
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left; 
+
 }
 
 nav {
-    display: flex;
-    flex-grow: none;
-    flex-shrink: none;
-    justify-content: space-between;
-
     width: 452px;
     height: 50px;
-
+    padding: 0px;
 }
 
-
+nav ul {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0;
+    list-style: none;
+}
 .logo {
     flex-grow: none;
     flex-shrink: none;
@@ -80,7 +81,7 @@ nav {
 .logoText {
     display: inline-block;
 
-    font-family: Inika;
+    font-family: 'Inika';
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -91,14 +92,27 @@ nav {
 }
 
 .linksNav {
-
     color: var(--linksNav);
 
-    font-family: Inika;
+    font-family: 'Inika';
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
+
+    text-decoration: none;
+}
+
+.linksNav:hover {
+    color: var(--mainOrange);
+
+    font-family: 'Inika';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+
+    text-decoration: none;
 }
 
 #welcome {
@@ -127,7 +141,7 @@ nav {
     padding: 0px;
 }
 
-.welcomeText h2 {
+.welcomeText h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -145,7 +159,7 @@ nav {
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: left;    
 
     width: 525.44px;
     height: 105px;
@@ -166,11 +180,12 @@ nav {
     border: 2px solid var(--mainOrange);
     border-radius: 10px;       
     
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    font-family: Inter;
     font-size: 16px;
+    font-weight: 400;
     line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
 
     color: #000000
 }
@@ -191,6 +206,7 @@ nav {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+
     color: #FFFFFF;
 }
 #about {
@@ -215,11 +231,10 @@ nav {
 
 .aboutText h2 {
     font-family: 'Inika';
-    font-size: 40px;
+    font-style: normal;
     font-weight: 400;
+    font-size: 40px;
     line-height: 52px;
-    letter-spacing: 0em;
-    text-align: left;
 
     width: 463px;
     height: 102px;
@@ -268,7 +283,6 @@ nav {
     height: 94px;
 
     margin-bottom: 90px;
-    border: 1px solid black;
 }
 
 .services_content h2 {
@@ -298,6 +312,12 @@ nav {
 
     margin: 0;
     
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
     background: none;
     border: 1px solid var(--mainOrange);
     border-radius: 5px;
@@ -309,6 +329,12 @@ nav {
     height: 50px;
 
     margin: 0;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
     
     background: var(--mainOrange);
     border: 1px solid var(--mainOrange);
@@ -317,8 +343,6 @@ nav {
 }
 
 .services {
-    border: 1px solid royalblue;
-
     display: flex;
     flex-wrap: wrap;
 
