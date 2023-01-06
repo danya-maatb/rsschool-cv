@@ -112,8 +112,8 @@ nav ul {
 }
 
 .leafs {
-    width: 448.8px;
-    height: 407.36px;
+    display: block;
+    box-sizing: border-box;
 
     margin: 62px 109px;
 }
@@ -267,10 +267,13 @@ nav ul {
     width: 1007px;
     height: 94px;
 
-    margin-bottom: 90px;
+    padding-top: 10px;
+    margin-bottom: 80px;
 }
 
 .services_content h2 {
+    display: flex;
+    align-items: flex-end;
     width: 306px;
     height: 94px;
 
@@ -280,7 +283,10 @@ nav ul {
     font-size: 40px;
     line-height: 52px;
 
+    text-align: left;
+    padding: 0px;
     color: var(--mainGreen);
+    margin: 0px;
 }
 
 .services_btns {
@@ -289,14 +295,13 @@ nav ul {
 
     width: 559px;
     height: 50px;
+    margin: 0px;
 }
 
 .services_btns button {
     width: 161px;
     height: 50px;
 
-    margin: 0;
-    
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
@@ -307,13 +312,13 @@ nav ul {
     border: 1px solid var(--mainOrange);
     border-radius: 5px;
     color: var(--mainOrange);
+    text-align: center;
+    margin: 0px;
 }
 
 .services_btns button:hover {
     width: 161px;
     height: 50px;
-
-    margin: 0;
 
     font-family: 'Inika';
     font-style: normal;
@@ -325,11 +330,15 @@ nav ul {
     border: 1px solid var(--mainOrange);
     border-radius: 5px;
     color: #FFFFFF;
+    text-align: center;
+    margin: 0px;
 }
 
 .services {
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0px;
 
     align-items:flex-start;
     justify-content: space-between;
@@ -370,10 +379,12 @@ nav ul {
     font-size: 20px;
     line-height: 20px;
 
+    height: 24px;
     text-align: center;
     margin: 10px;
 
     color: var(--mainOrange);
+    padding-top: 0px;
 }
 
 .service_item .card p {
@@ -385,8 +396,9 @@ nav ul {
 
     color: var(--lightGray);
 
+    padding: 0px;
     text-align: center;
-    margin: 0px;
+    margin-top: 10px;
 }
 
 #prices {
@@ -608,6 +620,7 @@ nav ul {
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
+    letter-spacing: 0.05em;
 
     color: var(--lightGray);
 }
@@ -668,8 +681,13 @@ footer .data {
     align-items: center;
     height: 50px;
     width: 182px;
+    padding-right: 13px;
 }
 
+footer .data p {
+    padding: 0px;
+    margin: 0px;
+}
 footer a {
 
     font-family: Inter;
@@ -700,9 +718,11 @@ footer a:hover {
 }
 
 .socialList {
+    position: relative;
+    top: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 188px;
     height: 50px;
 
@@ -714,7 +734,8 @@ footer a:hover {
 
 .socialList li {
     display: flex;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
     width: 32px;
     height: 32px;
 }
