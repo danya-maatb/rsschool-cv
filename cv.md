@@ -17,3 +17,34 @@ I am 22 years old, I work as an engineer in Belarusian National Technical Univer
 * Git/GitHub (*in progress...*)
 
 ***
+### **Code Sample**
+```
+function add(num1, num2) {
+  let arr1=String(num1).split('').reverse();
+  let arr2=String(num2).split('').reverse();
+  let n=[];
+  if (arr1.length >= arr2.length) {
+    for (let i=0; i<arr1.length; i++) {
+      if (arr2 [i]===undefined) { arr2[i] = 0;}
+      n[i]=Number(arr1[i])+Number(arr2[i]);
+    }
+  } else {
+    for (let i=0; i<arr2.length; i++) {
+      if (arr1 [i]===undefined) { arr1[i] = 0;}
+      n[i]=Number(arr2[i])+Number(arr1[i]);
+    }
+  }
+  return +n.reverse().join('');
+}
+```
+
+***
+
+### **Education**
+* Belarusian National Technical University
+    + Economics and organization of production
+* RSSchool JS/FE Pre-School 2022Q4
+* RSSchool JS/FE Pre-School 2023Q1 (*in progress...*)
+* JavaScript Manual on [learn.javascript.ru](https://learn.javascript.ru/) (*in progress...*)
+
+***
