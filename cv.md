@@ -48,3 +48,10 @@ function add(num1, num2) {
 * JavaScript Manual on [learn.javascript.ru](https://learn.javascript.ru/) (*in progress...*)
 
 ***
+
+### **Languages**
+* *Belarussian* - basic
+* *Russian* - native
+* *English* - C2 Proficient 
+(according to online test at ![logo](img/EFSET.png) - [EFSET](https://www.efset.org/) [certificate](https://www.efset.org/cert/unBbM1)): 
+![EFSET certificate](img/cert.png)
